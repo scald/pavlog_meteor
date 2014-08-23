@@ -1,0 +1,44 @@
+<template name="hello">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">PAVLOG</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Nav</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {{> loginButtons }}
+                <!-- here -->
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                <div class="box">
+                    <div class="box-title">
+                        <h3>
+                            My Activity
+                        </h3>
+                    </div>
+                    <div class="box-content">
+                        <div id="flot-2" class='flot' style="height:300px"></div>
+                    </div>
+                    <div class="box-content">
+                        <div id="overview" class="flot" style="height:150px;"></div>
+                    </div></div>
+                </div>
+                <div class="col-xl-12">
+                    <!-- {{steps}} -->
+                </div>
+            </div>
+        </div>
+</template>
